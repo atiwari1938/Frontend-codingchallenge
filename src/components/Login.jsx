@@ -33,17 +33,19 @@ const Login = ({ setIsAuthenticated }) => {
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
-        <div className={`form-group ${emailError ? 'has-error' : ''}`}>
-          <label>Email</label>
-          <input type="email" className={`form-control ${emailError ? 'is-invalid' : ''}`} 
-                 value={email} onChange={(e) => setEmail(e.target.value)} required />
-          {emailError && <div className="invalid-feedback">Please enter a valid email address.</div>} 
-        </div>
-        <div className="form-group">
-          <label>Password</label>
-          <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        </div>
-        <button type="submit" className="btn btn-primary">Login</button>
+        <fieldset className="form-fieldset">
+          <div className={`form-group ${emailError ? 'has-error' : ''}`}>
+            <label>Email</label>
+            <input type="email" className={`form-control ${emailError ? 'is-invalid' : ''}`} 
+                   value={email} onChange={(e) => setEmail(e.target.value)} required />
+            {emailError && <div className="invalid-feedback">Please enter a valid email address.</div>} 
+          </div>
+          <div className="form-group">
+            <label>Password</label>
+            <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          </div>
+          <button type="submit" className="btn btn-primary">Login</button>
+        </fieldset>
       </form>
     </div>
   );

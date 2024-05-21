@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Doctors.css'; 
+import { lightBlue } from '@mui/material/colors';
 
 const Doctors = () => {
   const [doctors, setDoctors] = useState([]);
@@ -31,6 +32,7 @@ const Doctors = () => {
         throw new Error('Failed to delete doctor');
       }
       setDoctors(doctors.filter(doctor => doctor.doctorId !== doctorId));
+      alert("Doctor Deleted ")
     } catch (error) {
       console.error('Error deleting doctor:', error.message);
     }
@@ -38,9 +40,11 @@ const Doctors = () => {
 
   return (
     <div>
+        <hr/>
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h1>Doctors Page</h1>
-        <Link to="/add-doctor" className="btn btn-primary">Add Doctor</Link>
+    
+        <h1 style={{color:"#0d6efd"}}>Doctors Page</h1>
+        <Link to="/add-doctor" className="btn btn-primary" style={{maxWidth:'fit-content'}}>Add Doctor</Link>
       </div>
       <div className="row mt-4">
         {doctors.map(doctor => (
@@ -53,7 +57,7 @@ const Doctors = () => {
                 <p className="card-text">Email: {doctor.email}</p>
                 <p className="card-text">Degree: {doctor.degree}</p>
                 <button
-                  className="btn btn-danger"
+                  className="btn btn-danger" style={{maxWidth:'fit-content'}}
                   onClick={() => handleDelete(doctor.doctorId)}
                 >
                   Delete
