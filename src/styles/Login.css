@@ -1,0 +1,35 @@
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    color: #1e90ff;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #1a7acc;
+  }
+  

@@ -1,0 +1,13 @@
+.navbar-wrapper {
+    width: 100%;
+  }
+  
+  .navbar {
+    width: 100vw; 
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: #ADD8E6;
+    color: white;
+  }

@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    width: 100%;
+  }  
+  .navbar-wrapper {
+    width: 100%;
+  }
+  .dev.container {
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: #ADD8E6;
+    color: white;
+  }
+  

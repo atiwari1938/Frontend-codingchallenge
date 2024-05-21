@@ -1,0 +1,39 @@
+
+.about_section {
+    padding: 50px 0;
+  }
+  
+  .about_taital {
+    padding-left: 50px;
+  }
+  
+  .about_text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .highest_text {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .lorem_text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .image_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about_image {
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 80px; 
+  }

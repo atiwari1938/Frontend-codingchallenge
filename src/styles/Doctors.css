@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+
+.add {
+    border-radius: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    margin-bottom: 20px; 
+}
+
+.card:hover {
+    -webkit-box-shadow: 3px 5px 17px -4px #777777;
+    box-shadow: 3px 5px 17px -4px #777777;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
