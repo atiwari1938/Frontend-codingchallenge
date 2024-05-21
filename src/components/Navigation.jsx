@@ -31,10 +31,7 @@ const Navigation = () => {
       </nav>
       <footer className="footer bg-lightblue fixed-bottom">
         <div className="container text-center py-3">
-        <h5 style={{textAlign:'right'}}>Contact Us</h5>
-        <div style={{textAlign:'right'}}>Contact Number: 1234567890</div>
-        <div style={{textAlign:'right'}}>Email: test@gmail.com</div>
-        <div style={{textAlign:'right'}}>Address: 123 Street, Chennai, India</div>
+        
           <span className="text-muted">© 2024 Doctor Management</span>
         </div>
       </footer>
